@@ -28,10 +28,11 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-body;
   font-size: 16px;
   line-height: 1.5;
   color: $body-text-color;
+  background-color: #f7f7f7;
 }
 
 a {
@@ -90,11 +91,10 @@ a {
 .page-header {
   color: $header-heading-color;
   text-align: center;
-  background-color: $header-bg-color;
-  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  background: $al-gradient-5;
 
   @include large {
-    padding: 5rem 6rem;
+    min-height: 20rem;
   }
 
   @include medium {
@@ -109,6 +109,7 @@ a {
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
+  text-shadow: $text-shadow;
 
   @include large {
     font-size: 3.25rem;
