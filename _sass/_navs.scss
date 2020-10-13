@@ -1,9 +1,12 @@
 nav {
   display: flex;
   flex-direction: row;
-  padding: 2rem;
+  padding: 2rem 2rem 0 2rem;
   a {
     color: $white;
+    &:hover {
+      color: lighten($hotpink,10);
+    }
   }
   ul {
     list-style-type: none;
@@ -20,6 +23,6 @@ nav {
 .logo {
   text-indent: -99999px;
   width: 2rem;
-  background-image: url(/assets/img/appland-a-gradient.svg);
+  background-image: url(/assets/img/appland-a-sharp.svg);
   background-repeat: no-repeat;
 }

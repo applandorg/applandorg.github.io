@@ -6,5 +6,13 @@
     img {
       margin-right: 2rem;
     }
+    a {
+      transition: $transition;
+      &:hover {
+        color: $royal;
+        text-decoration: none;
+
+      }
+    }
   }
 }
