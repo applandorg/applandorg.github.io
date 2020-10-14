@@ -1,6 +1,6 @@
 ---
 layout: default
-title: App maps by AppLand
+title: AppLand
 permalink: /
 ---
 
