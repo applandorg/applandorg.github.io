@@ -1,7 +1,8 @@
 @import "normalize";
 @import "rouge-github";
 @import "variables";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@300;400;600;700&family=Monda:wght@400;700&display');
+
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -28,18 +29,21 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $font-body;
   font-size: 16px;
   line-height: 1.5;
   color: $body-text-color;
+  background-color: #f7f7f7;
 }
+
 
 a {
   color: $body-link-color;
   text-decoration: none;
+  transition: $transition;
 
   &:hover {
-    text-decoration: underline;
+    color: $royal;
   }
 }
 
@@ -87,28 +91,34 @@ a {
   }
 }
 
+.hero-content {
+  padding: 3rem;
+}
+
 .page-header {
   color: $header-heading-color;
   text-align: center;
-  background-color: $header-bg-color;
-  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  background: $al-gradient-5;
+  box-shadow: $box-shadow-2;
+  font-family: $font-header;
 
   @include large {
-    padding: 5rem 6rem;
+    min-height: 20rem;
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    //padding: 3rem 4rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    //padding: 2rem 1rem;
   }
 }
 
 .project-name {
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 0.1rem;
+  text-shadow: $text-shadow;
 
   @include large {
     font-size: 3.25rem;
@@ -124,9 +134,10 @@ a {
 }
 
 .project-tagline {
-  margin-bottom: 2rem;
-  font-weight: normal;
+  margin: 0;
+  font-weight: 300;
   opacity: 0.7;
+  font-family: $font-body;
 
   @include large {
     font-size: 1.25rem;
@@ -149,8 +160,8 @@ a {
   }
 
   @include large {
-    max-width: 64rem;
-    padding: 2rem 6rem;
+    max-width: 70rem;
+    padding: 2rem;
     margin: 0 auto;
     font-size: 1.1rem;
   }
@@ -178,6 +189,7 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
+    font-family: $font-header;
     color: $section-headings-color;
   }
 
