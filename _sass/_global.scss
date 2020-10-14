@@ -1,0 +1,33 @@
+// Global styles
+
+body {
+  margin: 0;
+}
+
+#appmap { 
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+    'header'
+    'main';
+
+  main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    .main-content {
+      width: 100%;
+    }
+
+    footer {
+      width: 100%;
+      max-width: 70rem;
+      grid-template-columns: 1fr;
+      padding: 0 2rem;
+      margin: 0 auto;
+    }
+  }
+}

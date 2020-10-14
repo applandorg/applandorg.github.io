@@ -7,31 +7,24 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <main>
+    <div id="appmap">
+      <!-- header -->
       <header class="page-header">
         {% include navigation.html %}
+        <div class="hero-content">
+          <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+          <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+        </div>
       </header>
-      <section class="hero-content">
-        <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
-        <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
-        {% if site.github.is_project_page %}
-          <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-        {% endif %}
-        {% if site.show_downloads %}
-          <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-          <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-        {% endif %}
-      </section>
-
-      <section class="main-content">
-        {{ content }}
-
+      <!-- main -->
+      <main>
+        <section class="main-content">
+          {{ content }}
+        </section>
         <footer class="site-footer">
-          {% if site.github.is_project_page %}
-            <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
-          {% endif %}
+          <p>AppLand FTW</p>
         </footer>
-      </section>
+      </main>
 
       {% if site.google_analytics %}
         <script>
@@ -44,10 +37,8 @@
           ga('send', 'pageview');
         </script>
       {% endif %}
-    </main>
-    <footer>
-      AppLand FTW
-    </footer>
+    </div>
+    
     
   </body>
 </html>

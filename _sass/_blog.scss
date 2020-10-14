@@ -1,11 +1,16 @@
 .blog-post-list {
   list-style-type: none;
   padding: 0;
+
   .blog-post {
     display: flex;
+
     img {
       margin-right: 2rem;
+      width: 200px;
+      height: 200px;
     }
+    
     a {
       transition: $transition;
       &:hover {

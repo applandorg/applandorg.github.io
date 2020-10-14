@@ -2,6 +2,9 @@ nav {
   display: flex;
   flex-direction: row;
   padding: 2rem 2rem 0 2rem;
+  max-width: 70rem;
+  margin: 0 auto;
+
   a {
     color: $white;
     &:hover {
