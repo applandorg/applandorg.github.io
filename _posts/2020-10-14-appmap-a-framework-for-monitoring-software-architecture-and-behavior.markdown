@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "AppMap : A framework for monitoring software architecture and behavior"
-author: Kevin Gilpin
+author: Elizabeth Lawler
 permalink: /blog/:year/:month/:day/:title/
 thumb: /assets/img/posts/unblock-yourself-thumb.jpg
 image: /assets/img/posts/unblock-yourself-illo.svg
