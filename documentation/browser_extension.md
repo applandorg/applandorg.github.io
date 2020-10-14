@@ -3,20 +3,15 @@ layout: default
 title: Browser extension
 permalink: /documentation/browser_extension
 ---
----
-__Documentation__
-
-- [Recording AppMaps with Ruby](/documentation/ruby_client)
-- [Recording AppMaps with Java](/documentation/java_client)
-- [Recording AppMaps with the AppLand browser extension](/documentation/browser_extension)
-
----
+{% include documentation_navigation.md%}
 
 # Recording AppMaps with the AppLand browser extension
---- 
 
 ## Overview
 ---
+
+![AppLand browser extension](../images/appland_browser_extension_screen.jpg)
+
 AppLand "remote recording" is an easy way to record and analyze end-user flows for applications with a web-based UI. Remote recording is composed of two parts:
 
 - The AppLand client for your programming language, which runs on the server side and makes the actual recordings of the code. To review setup instructions for the AppLand client, review the client setup instructions for [Ruby](#recording-appmaps-with-ruby) or [Java](#recording-appmaps-with-java).

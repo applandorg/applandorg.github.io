@@ -3,14 +3,8 @@ layout: default
 title: Ruby client
 permalink: /documentation/ruby_client
 ---
----
-__Documentation__
 
-- [Recording AppMaps with Ruby](#recording-appmaps-with-ruby)
-- [Recording AppMaps with Java](#recording-appmaps-with-java)
-- [Recording AppMaps with the AppLand browser extension](#recording-appmaps-with-the-appland-browser-extension)
-
----
+{% include documentation_navigation.md%}
 
 # Recording AppMaps with Ruby
 

@@ -3,17 +3,9 @@ layout: default
 title: Java client
 permalink: /documentation/java_client
 ---
----
-__Documentation__
+{% include documentation_navigation.md%}
 
-- [Recording AppMaps with Ruby](/documentation/ruby_client)
-- [Recording AppMaps with Java](/documentation/java_client)
-- [Recording AppMaps with the AppLand browser extension](/documentation/browser_extension)
-
----
 # Recording AppMaps with Java 
-
----
 
 ## Step 1: Install the AppMap Java agent
 
