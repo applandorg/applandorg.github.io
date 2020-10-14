@@ -4,6 +4,4 @@ title: App maps by AppLand
 permalink: /
 ---
 
-- Ruby client
-- Java client
-- Browser extension
+![Appmap diagram](/assets/img/pages/appmap-diagram.svg)
