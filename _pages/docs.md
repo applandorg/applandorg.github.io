@@ -3,7 +3,15 @@ layout: default
 title: Documentation
 permalink: /documentation/
 ---
-# Documentation
+---
+__Documentation__
+
+- [Recording AppMaps with Ruby](#recording-appmaps-with-ruby)
+- [Recording AppMaps with Java](#recording-appmaps-with-java)
+
+---
+
+# Recording AppMaps with Ruby
 
 ## Step 1: Install the AppMap gem
 
@@ -64,23 +72,13 @@ Each RSpec test will output a data file into the directory tmp/appmap/rspec For 
 
 ```
 $ find tmp/appmap/rspec
-my_app_behaves_as_expected.appmap.json
-```
+my_app_behaves_as_expected.appmap.json  
+```  
+<br/>
 
+# Recording AppMaps with Java 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 ## Step 1: Install the AppMap Java agent
 
