@@ -10,7 +10,7 @@
       width: 200px;
       height: 200px;
     }
-    
+
     a {
       transition: $transition;
       &:hover {
@@ -19,5 +19,11 @@
 
       }
     }
+  }
+}
+
+.post-content {
+  img {
+    width: 100%;
   }
 }
