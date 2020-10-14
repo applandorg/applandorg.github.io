@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: AppMap
+title: AppLand.org
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Describe software architecture with data
 baseurl: "" # the subpath of your site, e.g. /blog
-url: 'https://appmaps.org'
+url: 'https://appland.org'
 twitter_username: LandOfApps
 github_username:  applandinc
 google_analytics: UA-170001784-4
