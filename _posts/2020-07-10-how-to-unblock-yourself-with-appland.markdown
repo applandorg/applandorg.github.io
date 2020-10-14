@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "How to unblock yourself with AppLand"
 author: Kevin Gilpin
 permalink: /blog/:year/:month/:day/:title/
