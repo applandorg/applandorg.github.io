@@ -1,9 +1,7 @@
 ---
 layout: default
-title: App maps by AppLand
+title: AppLand
 permalink: /
 ---
 
-- Ruby client
-- Java client
-- Browser extension
+![Appmap diagram](/assets/img/pages/appmap-diagram.svg)

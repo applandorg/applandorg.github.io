@@ -1,8 +1,9 @@
 nav {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   padding: 2rem 2rem 0 2rem;
-  max-width: 70rem;
+  max-width: 65rem;
   margin: 0 auto;
 
   a {
@@ -25,7 +26,7 @@ nav {
 
 .logo {
   text-indent: -99999px;
-  width: 2rem;
+  width: 4rem;
   background-image: url(/assets/img/appland-a-sharp.svg);
   background-repeat: no-repeat;
 }
