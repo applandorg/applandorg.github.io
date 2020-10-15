@@ -3,6 +3,7 @@ layout: default
 title: AppLand
 permalink: /
 ---
+<br>
 
 __Our goal at AppLand is to help code “speak for itself.__
 We’re a group of passionate engineers and architects aiming to drive innovation in software architecture and design. Software is oftentimes complex and its nuances can be difficult to communicate efficiently. We'd like to change that.
