@@ -11,9 +11,11 @@ excerpt_separator: <!--more-->
 There has been a tremendous increase in the number of products and metrics for the DevOps toolchain, particularly in the delivery of software to the production environment, and the automation and standardization of the quality control of code. 
  
 But one area has lingered as an “unmetriced” area of the SDLC for the last 20 years since the agile development and DevOps movements took flight: analysis of software architecture. 
+
+<!--more-->
  
 With this in mind, we designed the AppMap framework to address this gap in software analysis. The framework consists of two core elements. First, a standard data format that captures detailed information of runtime code execution, data snapshots and application metadata. Second, client language libraries that enable automatically capturing this data from your applications. This information can be used to generate insightful visualizations and analytics of the behavior and architecture of your code.
-<!--more-->
+
  
 Altogether, the AppMap framework can provide you and your team with a clear picture of how your software works and how it changes over time. 
  
