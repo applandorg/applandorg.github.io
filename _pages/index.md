@@ -25,7 +25,7 @@ The AppMap data specification aims to capture detailed information of runtime co
 
 The recording client enables an application to dynamically record and emit AppMap files. Use the AppMap files you’ve captured to generate insightful visualizations and analytics of the behavior and architecture of your code. Clients are currently available for [Java](https://github.com/applandinc/appmap-java) and [Ruby](https://github.com/applandinc/appmap-ruby).
 
-## How AppLand compares to other software tracing formats
+## How AppMap compares to other software tracing formats
 
 <div class="index-section">
   <table>
