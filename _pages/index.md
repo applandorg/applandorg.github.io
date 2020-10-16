@@ -4,9 +4,9 @@ title: AppMap
 permalink: /
 ---
 
-Software tools such as performance profilers, APMs, and log aggregators all provide some information about the behavior of code code; but none are
+Software tools such as performance profilers, APMs, and log aggregators all provide some information about the behavior of code; but none are
 dedicated to helping developers inspect and optimize their application architecture. The AppMap framework provides comprehensive information about
-your software architecture, recorded into simple JSON files. These AppMap files can be obtained simply and easily by executing test cases or by
+your software architecture, recorded into simple JSON files. These AppMap files can be easily obtained by executing test cases or by
 interactively recording a live, running application. You can use AppMap recordings to generate insightful visualizations and analytics, share
 with your team, and optimize your software architecture.
 
