@@ -3,11 +3,114 @@ layout: default
 title: AppMap
 permalink: /
 ---
-<br>
 
-Getting people oriented around software architecture and design is necessary and required for them to make high-quality improvements. And the learning curve is simply too steep for many developers in increasingly large codebases. 
+## Get New Data About Your Software’s Architecture
 
-AppMaps allow for a culture where developers and leaders can self-service and self-educate on questions of architecture and design. A culture where architectural analysis and refinement is possible on a continuous basis, and where hard to identify and complex bugs are made evident and avoidable before they hit production.
+Traditional products such as application profilers, APMs, and loggers all provide information about characteristics of code and software applications.  AppMap provides a comprehensive inspection of your software architecture, aggregated in one simple file obtained simply easily from test case execution and other behavioral traces, and is entirely open source.
+
+<div class="index-section">
+  <table>
+     <thead>
+        <tr>
+           <th class="no-border"></th>
+           <th colspan="4">Application tracing methods</th>
+        </tr>
+     </thead>
+     <tbody>
+        <tr>
+           <td class="no-border"></td>
+           <td>Performance profiler</td>
+           <td>APM</td>
+           <td>Logging</td>
+           <td>AppMap</td>
+        </tr>
+        <tr>
+           <td>Level of detail</td>
+           <td>Fine</td>
+           <td>Coarse</td>
+           <td>Very coarse</td>
+           <td>Medium</td>
+        </tr>
+        <tr>
+           <td class="green-cell">Commands received</td>
+           <td class="green-cell">Yes</td>
+           <td class="green-cell">Yes</td>
+           <td class="green-cell">Yes</td>
+           <td class="green-cell">Yes</td>
+        </tr>
+        <tr>
+           <td>Commands sent</td>
+           <td class="green-cell">Yes</td>
+           <td class="yellow-cell">Maybe</td>
+           <td class="yellow-cell">Maybe</td>
+           <td class="green-cell">Yes</td>
+        </tr>
+        <tr>
+           <td>Data model</td>
+           <td>No</td>
+           <td>No</td>
+           <td>No</td>
+           <td class="green-cell">Yes</td>
+        </tr>
+        <tr>
+           <td>SQL queries</td>
+           <td class="yellow-cell">Maybe</td>
+           <td class="green-cell">Yes</td>
+           <td class="yellow-cell">Maybe</td>
+           <td class="green-cell">Yes</td>
+        </tr>
+        <tr>
+           <td>Parameters</td>
+           <td>No</td>
+           <td class="yellow-cell">Maybe</td>
+           <td class="yellow-cell">Maybe</td>
+           <td class="green-cell">Yes</td>
+        </tr>
+        <tr>
+           <td>Internal APIs</td>
+           <td>Maybe</td>
+           <td>No</td>
+           <td>No</td>
+           <td class="green-cell">Yes</td>
+        </tr>
+        <tr>
+           <td>Code flow visualization</td>
+           <td class="green-cell">Yes</td>
+           <td>No</td>
+           <td>No</td>
+           <td class="green-cell">Yes</td>
+        </tr>
+        <tr>
+           <td>Crypto</td>
+           <td>No</td>
+           <td>No</td>
+           <td>No</td>
+           <td class="green-cell">Yes</td>
+        </tr>
+        <tr>
+           <td>Available in dev</td>
+           <td class="green-cell">Yes</td>
+           <td>No</td>
+           <td class="green-cell">Yes</td>
+           <td class="green-cell">Yes</td>
+        </tr>
+        <tr>
+           <td>Links to source</td>
+           <td class="green-cell">Yes</td>
+           <td>No</td>
+           <td>No</td>
+           <td class="green-cell">Yes</td>
+        </tr>
+        <tr>
+           <td>Aggregate by command</td>
+           <td>No</td>
+           <td>No</td>
+           <td>No</td>
+           <td class="green-cell">Yes</td>
+        </tr>
+     </tbody>
+  </table>
+</div>
 
 ### AppMap framework
 
