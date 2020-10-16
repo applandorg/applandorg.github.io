@@ -4,15 +4,13 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+---
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+__Our goal at AppLand is to help code “speak for itself.__
+We’re a group of passionate engineers and architects aiming to drive innovation in software architecture and design. Software is oftentimes complex and its nuances can be difficult to communicate efficiently. We'd like to change that.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Sounds interesting? Join the discussion in our [Discord community](https://discord.com/invite/7ZJfWwD).
 
+Follow us on [Twitter](https://twitter.com/landofapps).
 
-[jekyll-organization]: https://github.com/jekyll
+---
