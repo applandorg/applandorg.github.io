@@ -6,7 +6,10 @@ permalink: /
 
 ## Get New Data About Your Software’s Architecture
 
-Traditional products such as application profilers, APMs, and loggers all provide information about characteristics of code and software applications.  AppMap provides a comprehensive inspection of your software architecture, aggregated in one simple file obtained simply easily from test case execution and other behavioral traces, and is entirely open source.
+Software tools such as performance profilers, APMs, and log aggregators all provide some information about the behavior of code code; but none are
+dedicated to helping developers inspect and optimize their application architecture. The AppMap framework provides comprehensive information about
+your software architecture, recorded into simple JSON files. These AppMap files can be obtained simply and easily by executing test cases or by
+interactively recording a live, running application. The components of the AppMap framework are open source under the MIT license.
 
 <div class="index-section">
   <table>
@@ -121,11 +124,11 @@ The AppMap framework provides a means of gathering detailed information of your 
 
 ### AppMap data specification
 
-The AppMap data specification aims to capture detailed information of runtime code execution, data snapshots and application metadata. This specification is being developed by AppLand and its contributors to create a standard around data used in analyzing and visualizing application architecture, behavior and design. The working specification is available [here on GitHub](https://github.com/applandinc/appmap).
+The AppMap data specification aims to capture detailed information of runtime code execution, data snapshots and application metadata. This specification is being developed by AppLand and its contributors to create a standard data format for analyzing, visualizing, and optimizing application architecture. The working specification is available at [https://github.com/applandinc/appmap](https://github.com/applandinc/appmap).
 
 ### Recording client
 
-The recording client enables an application to dynamically record and emit app map files. Use the app map files you’ve captured to generate insightful visualizations and analytics of the behavior and architecture of your code. Clients are currently available for [Java](https://github.com/applandinc/appmap-java) or [Ruby](https://github.com/applandinc/appmap-ruby).
+The recording client enables an application to dynamically record and emit AppMap files. Use the AppMap files you’ve captured to generate insightful visualizations and analytics of the behavior and architecture of your code. Clients are currently available for [Java](https://github.com/applandinc/appmap-java) and [Ruby](https://github.com/applandinc/appmap-ruby).
 
 ---
 
