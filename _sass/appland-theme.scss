@@ -19,7 +19,14 @@
 @mixin small {
   @media screen and (max-width: #{$medium-breakpoint}) {
     @content;
-  }
+    .blog-post-list .blog-post {
+       flex-direction: column;
+       img {
+         align-self: center;
+         margin-bottom: 1rem;
+       }
+     }
+   }
 }
 
 * {
@@ -327,6 +334,17 @@ a {
     margin: 1rem 0;
     background-color: $hr-border-color;
     border: 0;
+  }
+}
+
+.green-cell {background-color: $affirmative-green;}
+.yellow-cell {background-color: $maybe-yellow;}
+.main-content table th.no-border {border: 0px;}
+.main-content table tr td.no-border {border: 0px;}
+.index-section {
+  table {
+    margin: 3rem auto;
+    width: fit-content;
   }
 }
 
