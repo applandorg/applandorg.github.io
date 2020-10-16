@@ -5,6 +5,7 @@ nav {
   padding: 2rem 2rem 0 2rem;
   max-width: 65rem;
   margin: 0 auto;
+  align-items: center;
 
   a {
     color: $white;
@@ -29,4 +30,34 @@ nav {
   width: 4rem;
   background-image: url(/assets/img/appland-a-sharp.svg);
   background-repeat: no-repeat;
+}
+
+.appmap-logo {
+  text-indent: -99999px;
+  width: 4rem;
+  background-image: url(/assets/img/temp-logo.svg);
+  background-repeat: no-repeat;
+}
+
+#corp-header {
+  background-color: $gray1;
+  max-width: 100%;
+  nav {
+    padding: 1rem;
+    width: fit-content;
+    margin-right: 0;
+  }
+  img.corp-logo {
+    width: 7rem;
+  }
+}
+
+.header-logo-group {
+  a {
+    display: flex;
+    flex-direction: row;
+  }
+  h3 {
+    margin-left: 1rem;
+  }
 }
