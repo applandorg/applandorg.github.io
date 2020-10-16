@@ -27,16 +27,16 @@ The AppMap recording client enables an application to dynamically record and emi
      <thead>
         <tr>
            <th class="no-border"></th>
-           <th colspan="4">Application tracing methods</th>
+           <th colspan="4" class="dark-header">Application tracing methods</th>
         </tr>
      </thead>
      <tbody>
         <tr>
            <td class="no-border"></td>
-           <td>Performance profiler</td>
-           <td>APM</td>
-           <td>Logging</td>
-           <td>AppMap</td>
+           <td class="dusky-td">Performance profiler</td>
+           <td class="dusky-td">APM</td>
+           <td class="dusky-td">Logging</td>
+           <td class="dusky-td">AppMap</td>
         </tr>
         <tr>
            <td>Level of detail</td>
@@ -46,7 +46,7 @@ The AppMap recording client enables an application to dynamically record and emi
            <td>Medium</td>
         </tr>
         <tr>
-           <td class="green-cell">Commands received</td>
+           <td>Commands received</td>
            <td class="green-cell">Yes</td>
            <td class="green-cell">Yes</td>
            <td class="green-cell">Yes</td>
