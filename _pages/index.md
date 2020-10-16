@@ -11,6 +11,22 @@ dedicated to helping developers inspect and optimize their application architect
 your software architecture, recorded into simple JSON files. These AppMap files can be obtained simply and easily by executing test cases or by
 interactively recording a live, running application. The components of the AppMap framework are open source under the MIT license.
 
+### AppMap framework
+
+The AppMap framework provides a means of gathering detailed information of your application’s inner workings. Use this information to generate insightful visualizations and analytics to share with your team.
+
+![Appmap diagram](/assets/img/pages/appmap-diagram.svg)
+
+### AppMap data specification
+
+The AppMap data specification aims to capture detailed information of runtime code execution, data snapshots and application metadata. This specification is being developed by AppLand and its contributors to create a standard data format for analyzing, visualizing, and optimizing application architecture. The working specification is available at [https://github.com/applandinc/appmap](https://github.com/applandinc/appmap).
+
+### Recording client
+
+The recording client enables an application to dynamically record and emit AppMap files. Use the AppMap files you’ve captured to generate insightful visualizations and analytics of the behavior and architecture of your code. Clients are currently available for [Java](https://github.com/applandinc/appmap-java) and [Ruby](https://github.com/applandinc/appmap-ruby).
+
+## How AppLand compares to other software tracing formats
+
 <div class="index-section">
   <table>
      <thead>
@@ -114,21 +130,6 @@ interactively recording a live, running application. The components of the AppMa
      </tbody>
   </table>
 </div>
-
-### AppMap framework
-
-The AppMap framework provides a means of gathering detailed information of your application’s inner workings. Use this information to generate insightful visualizations and analytics to share with your team.
-
-![Appmap diagram](/assets/img/pages/appmap-diagram.svg)
-
-
-### AppMap data specification
-
-The AppMap data specification aims to capture detailed information of runtime code execution, data snapshots and application metadata. This specification is being developed by AppLand and its contributors to create a standard data format for analyzing, visualizing, and optimizing application architecture. The working specification is available at [https://github.com/applandinc/appmap](https://github.com/applandinc/appmap).
-
-### Recording client
-
-The recording client enables an application to dynamically record and emit AppMap files. Use the AppMap files you’ve captured to generate insightful visualizations and analytics of the behavior and architecture of your code. Clients are currently available for [Java](https://github.com/applandinc/appmap-java) and [Ruby](https://github.com/applandinc/appmap-ruby).
 
 ---
 
