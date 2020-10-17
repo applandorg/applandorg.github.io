@@ -332,6 +332,13 @@ a {
       padding: 0.5rem 1rem;
       border: 1px solid $table-border-color;
     }
+    .dark-header {
+      background-color: #232b3f;
+      color: $white;
+    }
+    .dusky-td {
+      background-color: #dde2ef
+    }
   }
 
   dl {
