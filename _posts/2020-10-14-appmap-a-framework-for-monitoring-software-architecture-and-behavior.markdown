@@ -5,6 +5,7 @@ author: Elizabeth Lawler
 permalink: /blog/:year/:month/:day/:title/
 thumb: /assets/img/posts/appland-post-thumb-fpo.svg
 image: /assets/img/posts/appland-post-feature-fpo.svg
+category: blog
 excerpt_separator: <!--more-->
 ---
 

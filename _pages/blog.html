@@ -5,6 +5,7 @@ permalink: /blog/
 ---
 <ul class="blog-post-list">
   {% for post in site.posts %}
+  {% if post.category=="blog" %}
     <li class="blog-post">
       {% if post.thumb %}
         <img src="{{ site.baseurl }}{{ post.thumb }}" alt="{{ post.title }}" class="post-image post-thumb">
@@ -20,5 +21,6 @@ permalink: /blog/
       
       
     </li>
+  {% endif %}
   {% endfor %}
 </ul>
