@@ -4,9 +4,10 @@ layout: page
 <div class="post-content">
   <h1>{{ page.title }}</h1>
   <p class="post-meta">Posted {{ page.date | date_to_string }} by {{ page.author }}</p>
-  {% if page.image %}
-    <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }}" class="post-image">
+  {% if page.category=="blog" %}
+    {% if page.image %}
+      <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }}" class="post-image">
+    {% endif %}
   {% endif %}
-
   {{ content }}
 </div>

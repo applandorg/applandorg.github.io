@@ -4,6 +4,28 @@ body {
   margin: 0;
 }
 
+.btn {
+  padding: 1rem;
+  border-radius: $border-radius;
+  a {
+    color: $white;
+  }
+  
+}
+
+.btn-primary, .btn-primary:disabled,.btn-primary:not(:disabled):not(.disabled):active, .input-primary, .input-primary:disabled {
+  background-color: $hotpink;
+}
+
+.btn-primary {
+  &:hover {
+    background-color: darken($hotpink,15);
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
 #applandoss { 
   height: 100vh;
   display: grid;

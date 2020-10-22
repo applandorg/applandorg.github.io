@@ -44,8 +44,9 @@ nav {
   max-width: 100%;
   nav {
     padding: 1rem;
-    width: fit-content;
+    width: 100%;
     margin-right: 0;
+    justify-content: flex-end;
   }
   img.corp-logo {
     width: 7rem;

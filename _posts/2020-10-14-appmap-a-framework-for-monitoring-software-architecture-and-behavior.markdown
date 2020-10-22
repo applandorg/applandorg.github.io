@@ -3,8 +3,9 @@ layout: post
 title:  "AppMap: A framework for monitoring software architecture and behavior"
 author: Elizabeth Lawler
 permalink: /blog/:year/:month/:day/:title/
-thumb: /assets/img/posts/appland-post-thumb-fpo.svg
-image: /assets/img/posts/appland-post-feature-fpo.svg
+thumb: /assets/img/posts/appmap-json-thumb.jpg
+image: /assets/img/posts/appmap-json.jpg
+category: blog
 excerpt_separator: <!--more-->
 ---
 
