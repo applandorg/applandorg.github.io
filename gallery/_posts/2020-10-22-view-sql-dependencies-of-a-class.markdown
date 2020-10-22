@@ -14,3 +14,4 @@ Start by selecting a scenario name from the dropdown list below. Next, choose a 
 <!--more-->
 
 [Read more](https://observablehq.com/@kgilpin/sql-dependencies-for-discourse-postscontroller-create-wh)
+{: .btn.btn-primary}

@@ -12,3 +12,4 @@ A small ruby script that automatically adds the required dependencies to your ru
 <!--more-->
 
 [Read more](https://github.com/jaredKreppein/appmap_auto_dependencies)
+{: .btn.btn-primary}
