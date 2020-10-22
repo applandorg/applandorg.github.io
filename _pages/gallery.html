@@ -4,20 +4,19 @@ title: Gallery
 permalink: /gallery/
 category: gallery
 ---
-<ul class="blog-post-list">
+<ul class="gallery-project-list">
   {% for post in site.posts %}
   {% if post.category=="gallery" %}
-    <li class="blog-post">
-      {% if post.thumb %}
+    <li class="gallery-project">
+      <!-- {% if post.thumb %}
         <img src="{{ site.baseurl }}{{ post.thumb }}" alt="{{ post.title }}" class="post-image post-thumb">
-      {% endif %}
+      {% endif %} -->
       <div class="post-content">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <div class="post-exerpt">
+        <!-- <div class="post-exerpt">
           {{ post.excerpt }}
-          <!-- <a href="{{ post.url }}">Continue reading</a> -->
-        </div>
-        
+          <a href="{{ post.url }}">Continue reading</a>
+        </div> -->
       </div>
       
       

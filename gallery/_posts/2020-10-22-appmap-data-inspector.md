@@ -4,8 +4,8 @@ title:  "AppMap data inspector"
 author: Dustin Byrne
 permalink: /gallery/:title/
 category: gallery
-thumb: /gallery/assets/img/appmap-json-thumb.jpg
-image: /gallery/assets/img/appmap-json.jpg
+thumb: /gallery/assets/img/appmap-data-inspector.png
+image: /gallery/assets/img/appmap-data-inspector.png
 excerpt_separator: <!--more-->
 ---
 Import an AppMap file or enter a URL to instpect data
