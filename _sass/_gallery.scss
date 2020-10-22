@@ -48,6 +48,13 @@
       }
     }
   }
+
+  @include medium {
+    grid-template-columns: 1fr;
+  }
+  @include small {
+    grid-template-columns: 1fr;
+  }
 }
 
 .post-content {
