@@ -20,3 +20,27 @@ The AppMap data specification aims to capture detailed information of runtime co
 
 The AppMap recording client enables an application to dynamically record and emit AppMap files. Use the AppMap files you’ve captured to generate insightful visualizations and analytics of the behavior and architecture of your code. Clients are currently available for [Java](https://github.com/applandinc/appmap-java) and [Ruby](https://github.com/applandinc/appmap-ruby).
 
+### Analysis and visualization
+
+AppMap data is easy to program, so you can quickly build custom analytics
+and visualizations of your architecture.
+
+Here are two examples. [View the gallery](/gallery) for more!
+
+<ul class="gallery-project-list">
+  {% assign featured_posts = site.posts | where: "featured", true %}
+  {% for post in featured_posts limit:2 %}
+  {% if post.category=="gallery" %}
+    <a class="gallery-project" href="{{ post.url }}">
+        {% if post.thumb %}
+          <img src="{{ site.baseurl }}{{ post.thumb }}" alt="{{ post.title }}" class="post-image post-thumb">
+        {% endif %}
+        <div class="post-content">
+          <h2>{{ post.title }}</h2>
+        </div>
+    </a>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+

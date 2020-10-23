@@ -11,5 +11,7 @@ excerpt_separator: <!--more-->
 A small ruby script that automatically adds the required dependencies to your ruby project so you can start appmapping right away.
 <!--more-->
 
-[Check it out](https://github.com/jaredKreppein/appmap_auto_dependencies)
 {: .btn.btn-primary}
+[Check out the repo &raquo;](https://github.com/jaredKreppein/appmap_auto_dependencies)
+
+[&laquo; Back to the gallery](/gallery)
