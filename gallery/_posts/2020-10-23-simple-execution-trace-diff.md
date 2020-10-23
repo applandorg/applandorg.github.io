@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Diff of a program execution trace"
-author: Rafal Rzepecki
+author: Rafał Rzepecki
 permalink: /gallery/:title/
 category: gallery
 featured: true
