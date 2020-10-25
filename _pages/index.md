@@ -25,7 +25,7 @@ The AppMap recording client enables an application to dynamically record and emi
 AppMap data is easy to program, so you can quickly build custom analytics
 and visualizations of your architecture.
 
-Here are a few examples. [View the gallery](/gallery) for more!
+Here are a few examples. [View the gallery](/code-gallery) for more!
 
 <ul class="gallery-project-list">
   {% assign featured_posts = site.posts | where: "featured", true %}
