@@ -28,7 +28,7 @@ body {
 
 #applandoss { 
   height: 100vh;
-  display: grid;
+  //display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   grid-template-areas: 
@@ -42,6 +42,12 @@ body {
 
     .main-content {
       width: 100%;
+        @include medium {
+
+        }
+        @include small {
+          //margin: 2rem;
+        }
     }
 
     footer {

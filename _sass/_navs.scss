@@ -53,6 +53,12 @@ nav {
   }
 }
 
+#main-nav ul {
+  @include small {
+    flex-direction: column;
+  }
+}
+
 .header-logo-group {
   a {
     display: flex;

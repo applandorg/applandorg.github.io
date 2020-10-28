@@ -13,7 +13,9 @@
       <header class="page-header">
         {% include corp-header.html %}
         {% include navigation.html %}
-        {% include hero-content.html %}
+        {% if page.category=="home" %}
+          {% include hero-content.html %}
+        {% endif %}
       </header>
       <!-- main -->
       <main>
