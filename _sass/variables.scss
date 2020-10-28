@@ -68,3 +68,48 @@ $row-height: 3rem;
 $font-mono: 'IBM Plex Mono', monospace;
 $font-body: 'IBM Plex Sans', sans-serif;
 $font-header: 'Monda', sans-serif;
+
+@mixin large {
+  @media screen and (min-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: #{$medium-breakpoint}) {
+    @content;
+  //   #corp-header {
+  //     nav {
+  //       margin-right: auto;
+  //       margin-left: auto;
+  //     }
+  //   }
+  //   .blog-post-list .blog-post {
+  //      flex-direction: column;
+  //      img {
+  //        align-self: center;
+  //        margin-bottom: 1rem;
+  //      }
+  //    }
+  //    nav {
+  //      flex-direction: column-reverse;
+  //    }
+  //    h1.project-name {
+  //      display: none;
+  //    }
+  //    .header-logo-group {
+  //      h3 {
+  //        font-size: 3rem;
+  //      }
+  //    }
+  //    .hero-content {
+  //      padding-top: 0px;
+  //    }
+    }
+}

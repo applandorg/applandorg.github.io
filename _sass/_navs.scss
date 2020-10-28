@@ -9,8 +9,9 @@ nav {
 
   a {
     color: $white;
+    transition: $transition;
     &:hover {
-      color: lighten($hotpink,10);
+      color: $hotpink;
     }
   }
   ul {
@@ -53,9 +54,16 @@ nav {
   }
 }
 
-#main-nav ul {
-  @include small {
-    flex-direction: column;
+#main-nav {
+  padding: 2rem;
+  ul {
+    @include small {
+      flex-direction: column;
+      li {
+        padding: .5rem 0;
+        transition: $transition;
+      }
+    }
   }
 }
 
@@ -65,6 +73,37 @@ nav {
     flex-direction: row;
   }
   h3 {
-    margin-left: 1rem;
+    margin: 2rem 0 2rem 1rem;
   }
+}
+
+@include small {
+  #corp-header {
+    nav {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  .blog-post-list .blog-post {
+     flex-direction: column;
+     img {
+       align-self: center;
+       margin-bottom: 1rem;
+     }
+   }
+   nav {
+     flex-direction: column-reverse;
+   }
+   h1.project-name {
+     display: none;
+   }
+   .header-logo-group {
+     h3 {
+       font-size: 2rem;
+       margin: 3rem 0 3rem 1rem;
+     }
+   }
+   .hero-content {
+     padding-top: 0px;
+   }
 }
