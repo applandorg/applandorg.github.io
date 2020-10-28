@@ -20,7 +20,7 @@ analysis of how the program execution has changed.
 <!--more-->
 
 <a href="https://gist.github.com/dividedmind/172920e9bd9a19dfbb84856eb64f2524">
-  <img alt="Check out the gist" style="width: 447px" src="/code-gallery/assets/img/simple-execution-trace.png">
+  <img alt="Check out the gist" style="max-width: 447px" src="/code-gallery/assets/img/simple-execution-trace.png">
 </a>
 
 {: .btn.btn-primary}

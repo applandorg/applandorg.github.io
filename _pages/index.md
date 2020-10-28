@@ -2,6 +2,7 @@
 layout: default
 title: AppMap
 permalink: /
+category: home
 ---
 
 Software tools such as performance profilers, APMs, and log aggregators all provide some information about the behavior of code; but none are
