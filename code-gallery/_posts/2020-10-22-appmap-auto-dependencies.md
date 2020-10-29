@@ -4,7 +4,6 @@ title:  "AppMap auto-dependencies"
 author: Jared Kreppein
 permalink: /code-gallery/:title/
 category: gallery
-featured: true
 thumb: /code-gallery/assets/img/appmap-json-thumb.jpg
 image: /code-gallery/assets/img/appmap-json.jpg
 excerpt_separator: <!--more-->
