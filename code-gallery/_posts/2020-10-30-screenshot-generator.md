@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AppMap screenshot editor"
+title:  "AppMap screenshot generator"
 author: Boris Adimov 
 permalink: /code-gallery/:title/
 category: gallery
