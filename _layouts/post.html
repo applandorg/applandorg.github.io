@@ -8,6 +8,9 @@ layout: default
     {% if page.image %}
       <img src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }}" class="post-image">
     {% endif %}
+    {% if page.image_url %}
+      <img src="{{ page.image_url }}" alt="{{ page.title }}" class="post-image">
+    {% endif %}
   {% endif %}
   {{ content }}
 </div>
