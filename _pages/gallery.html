@@ -11,6 +11,9 @@ category: gallery
         {% if post.thumb %}
           <img src="{{ site.baseurl }}{{ post.thumb }}" alt="{{ post.title }}" class="post-image post-thumb">
         {% endif %}
+        {% if post.thumb_url %}
+          <img src="{{ post.thumb_url }}" alt="{{ post.title }}" class="post-image post-thumb">
+        {% endif %}
         <div class="post-content">
           <h2>{{ post.title }}</h2>
         </div>
