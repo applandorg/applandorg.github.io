@@ -5,7 +5,7 @@ author: Kevin Gilpin
 permalink: /code-gallery/:title/
 category: gallery
 featured: true
-thumb: /code-gallery/assets/img/component-diagram-observable.png
+thumb: /code-gallery/assets/img/component-diagram-observable-thumb.jpg
 image: /code-gallery/assets/img/component-diagram-observable.png
 excerpt_separator: <!--more-->
 ---
