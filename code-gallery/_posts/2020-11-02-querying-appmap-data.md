@@ -10,14 +10,13 @@ image: /code-gallery/assets/img/appmap-query.png
 excerpt_separator: <!--more-->
 ---
 
-The AppMap framework includes JavaScript code which creates data structures that extract
-and simplify AppMap data.
+This example shows how to import AppMap data into [neo4j](https://neo4j.com)
+where it can be queried using the neo4j query language.
 
 <!--more-->
 
-This example shows how to create a representation of the code flow in an AppMap, use it to
-create nodes in a graph database, and query the database to find classes that don't call
-methods in other classes.
+An example query finds classes that don't call any other methods in other classes.
+These classes are "leaves" of the AppMap call graph.
 
 <script id="asciicast-368789" src="https://asciinema.org/a/368789.js" async></script>
 
@@ -46,7 +45,7 @@ The example requires a [neo4j](https://neo4j.com) instance to be available.
 
 ## Data sources
 
-The examples uses AppMap data recorded from the tests for the open source application
+The examples use AppMap data recorded from the tests for the open source application
 [Discourse](https://github.com/discourse/discourse), "A platform for community
 discussion". The recordings were created using the
 [appmap-ruby](https://github.com/applandinc/appmap-ruby) client. Since the Discourse
@@ -58,15 +57,15 @@ To obtain raw scenario data, visit the the [AppLand sandbox](https://app.land/),
 
 From the application page, choose a scenario:
 
-<img style="width: 420px; height: 291px;" src="/code-gallery/assets/img/appmap-query-scenario.png">
+<img style="width: 420px; height: 189px;" src="/code-gallery/assets/img/appmap-query-scenario.png">
 
 Open the properties for the scenario:
 
-<img style="width: 420px; height: 291px;" src="/code-gallery/assets/img/appmap-query-scenario-props.png">
+<img style="width: 420px; height: 245px;" src="/code-gallery/assets/img/appmap-query-scenario-props.png">
 
 Download the data:
 
-<img style="width: 420px; height: 291px;" src="/code-gallery/assets/img/appmap-query-download.png">
+<img style="width: 420px; height: 230px;" src="/code-gallery/assets/img/appmap-query-download.png">
 
 Downloading several sets of data will make the query results more interesting.
 
