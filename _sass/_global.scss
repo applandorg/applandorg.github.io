@@ -164,6 +164,10 @@ a {
   opacity: 0.7;
   font-family: $font-body;
 
+  a {
+    color: white;
+  }
+
   @include large {
     font-size: 1.25rem;
   }

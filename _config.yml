@@ -21,7 +21,7 @@
 title: AppLand.org
 email: support@app.land
 description: >- # this means to ignore newlines until "baseurl:"
-  A framework for monitoring software architecture and behavior
+  A framework for monitoring end-to-end code and data flows
 baseurl: "" # the subpath of your site, e.g. /blog
 url: 'https://appland.org'
 twitter_username: LandOfApps
