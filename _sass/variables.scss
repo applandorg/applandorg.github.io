@@ -8,6 +8,7 @@ $gray6: #EAEAEA;
 $hotpink: #FF07AA;
 $dullpink: #7b4669;
 $royal: #9C2FBA;
+$deeppurple: #100124;
 $blue: #4362b1;
 $teal: #6FDDD6;
 $yellow: #EBDF90;
@@ -48,6 +49,7 @@ $appland-gradient-2: linear-gradient(90deg, rgba(255,7,170,1) 0%, rgba(156,47,18
 $appland-gradient-3: linear-gradient(0deg, rgba(156,47,186,1) 0%, rgba(255,7,170,1) 100%);
 $appland-gradient-4: linear-gradient(90deg, rgba(255,7,170,1) 0%, rgba(156,47,186,1) 50%, rgba(67,98,177,1) 100%);
 $al-gradient-5: linear-gradient(180deg, rgba(17,1,38,1) 0%, rgba(116,14,133,1) 200%);
+$al-gradient-5: linear-gradient(#4f1996, #362e94);
 
 // Alerts
 $success: linear-gradient(90deg, rgba(113,149,41,1) 0%, rgba(143,196,19,1) 100%);
@@ -67,6 +69,7 @@ $row-height: 3rem;
 // Fonts
 $font-mono: 'IBM Plex Mono', monospace;
 $font-body: 'IBM Plex Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
 $font-header: 'Monda', sans-serif;
 
 @mixin large {
@@ -84,32 +87,5 @@ $font-header: 'Monda', sans-serif;
 @mixin small {
   @media screen and (max-width: #{$medium-breakpoint}) {
     @content;
-  //   #corp-header {
-  //     nav {
-  //       margin-right: auto;
-  //       margin-left: auto;
-  //     }
-  //   }
-  //   .blog-post-list .blog-post {
-  //      flex-direction: column;
-  //      img {
-  //        align-self: center;
-  //        margin-bottom: 1rem;
-  //      }
-  //    }
-  //    nav {
-  //      flex-direction: column-reverse;
-  //    }
-  //    h1.project-name {
-  //      display: none;
-  //    }
-  //    .header-logo-group {
-  //      h3 {
-  //        font-size: 3rem;
-  //      }
-  //    }
-  //    .hero-content {
-  //      padding-top: 0px;
-  //    }
     }
 }
