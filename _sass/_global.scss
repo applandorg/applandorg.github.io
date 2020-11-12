@@ -168,6 +168,24 @@ a {
 .main-content {
   word-wrap: break-word;
 
+  h1.section-header {
+    font-size: 3.25rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 0rem;
+  }
+
+  p.section-sub-header {
+    text-align: center;
+    color: black;
+    margin: 0;
+  }
+
+  .oss-projects {
+    display: flex;
+    justify-content: space-between;
+  }
+
   :first-child {
     margin-top: 0;
   }

@@ -5,6 +5,8 @@ permalink: /
 category: home
 ---
 
+{% include oss-projects.html %}
+
 Software tools such as performance profilers, APMs, and log aggregators all provide some information about the behavior of code; but none are dedicated to helping developers inspect and optimize end-to-end code and data flows. The AppLand Framework provides comprehensive information about the internal and external design of your code, recorded into simple JSON files called AppMaps. These AppMap files can be easily obtained by executing test cases or by interactively recording a live, running application. You can use AppMap recordings to generate insightful visualizations and analytics, share with your team, and optimize your software architecture.
 
 ![Appmap diagram](/assets/img/pages/appmap-diagram.svg)
@@ -42,7 +44,7 @@ Here are a few examples. [View the gallery](/code-gallery) for more!
 
 # Join us!
 
-Are you passionate about software architecture and design? 
+Are you passionate about software architecture and design?
 
 <p class="btn btn-primary">
   <a href="https://discord.com/invite/N9VUap6">Join us in Discord</a>

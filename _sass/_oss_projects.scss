@@ -1,0 +1,47 @@
+.oss-projects{
+  @include small {
+    flex-direction: column;
+  }
+}
+
+.main-content .project {
+  width: 50%;
+  border-radius: 4px;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  margin-top: 1rem;
+    h1 {
+      color: black;
+      margin-bottom: 0rem;
+      margin-top: 1rem;
+    }
+    img {
+      height: 5rem;
+    }
+    p {
+      margin-top: 0rem;
+    }
+    @include small {
+      width: 100%;
+    }
+}
+
+.large-inline-cta {
+  text-align: center;
+}
+
+.two-line-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.large-btn-label {
+  font-family: "monda", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.large-btn-subhead {
+  font-size: .9rem;
+}
