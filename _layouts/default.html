@@ -22,6 +22,9 @@
           {{ content }}
         </section>
       </main>
+      <footer>
+        {% include footer.html %}
+      </footer>
 
       {% if site.google_analytics %}
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180943551-1"></script>
@@ -33,6 +36,7 @@
           gtag('config', 'UA-180943551-1');
         </script>
       {% endif %}
+
     </div>
 
   </body>

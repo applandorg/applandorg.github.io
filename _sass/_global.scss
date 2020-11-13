@@ -1,5 +1,4 @@
 // Global styles
-
 * {
   box-sizing: border-box;
 }
@@ -100,6 +99,7 @@ a {
     grid-area: main;
     display: grid;
     grid-template-rows: 1fr auto;
+    min-height: 100vh;
 
     .main-content {
       width: 100%;
@@ -110,15 +110,17 @@ a {
           //margin: 2rem;
         }
     }
-
-    footer {
-      width: 100%;
-      max-width: 65rem;
-      grid-template-columns: 1fr;
-      padding: 0 2rem;
-      margin: 0 auto;
-    }
   }
+}
+
+footer {
+  width: 100%;
+  padding: 0 2rem;
+  background: $deeppurple;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: relative;
 }
 
 .hero-content {
@@ -168,6 +170,24 @@ a {
 .main-content {
   word-wrap: break-word;
 
+  .section-content {
+    @include large {
+      max-width: 65rem;
+      padding: 2rem;
+      margin: 0 auto;
+    }
+  }
+
+  .gray-section {
+    background-color: #EFEFEF;
+  }
+
+  .section-description {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+  }
+
   h1.section-header {
     font-size: 3.25rem;
     color: black;
@@ -191,19 +211,15 @@ a {
   }
 
   @include large {
-    max-width: 65rem;
-    padding: 2rem;
     margin: 0 auto;
     font-size: 1.1rem;
   }
 
   @include medium {
-    padding: 2rem 4rem;
     font-size: 1.1rem;
   }
 
   @include small {
-    padding: 2rem;
     font-size: 1rem;
   }
 

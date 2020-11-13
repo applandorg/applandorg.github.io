@@ -3,7 +3,8 @@ layout: default
 title: Blog
 permalink: /blog/
 ---
-<ul class="blog-post-list">
+<div class="section-content">
+  <ul class="blog-post-list">
   {% for post in site.posts %}
   {% if post.category=="blog" %}
     <li class="blog-post">
@@ -16,11 +17,9 @@ permalink: /blog/
           {{ post.excerpt }}
           <a href="{{ post.url }}">Continue reading &raquo;</a>
         </div>
-        
       </div>
-      
-      
     </li>
-  {% endif %}
-  {% endfor %}
-</ul>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
