@@ -2,6 +2,7 @@
 .gallery-archive {
   h1, p { margin: 0; }
   p { margin-bottom: 2rem; }
+  .gallery-project-list .gallery-project {flex-direction: column;}
   @include small {
     //margin: 2rem;
   }
