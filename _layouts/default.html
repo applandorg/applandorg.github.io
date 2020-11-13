@@ -8,10 +8,8 @@
   </head>
   <body>
     <div id="applandoss">
-      
       <!-- header -->
       <header class="page-header">
-        {% include corp-header.html %}
         {% include navigation.html %}
         {% if page.category=="home" %}
           {% include hero-content.html %}
@@ -23,6 +21,9 @@
           {{ content }}
         </section>
       </main>
+      <footer>
+        {% include footer.html %}
+      </footer>
 
       {% if site.google_analytics %}
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180943551-1"></script>

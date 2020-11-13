@@ -1,5 +1,4 @@
 // Global styles
-
 * {
   box-sizing: border-box;
 }
@@ -87,12 +86,12 @@ a {
   }
 }
 
-#applandoss { 
+#applandoss {
   height: 100vh;
   //display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
-  grid-template-areas: 
+  grid-template-areas:
     'header'
     'main';
 
@@ -100,6 +99,7 @@ a {
     grid-area: main;
     display: grid;
     grid-template-rows: 1fr auto;
+    min-height: 100vh;
 
     .main-content {
       width: 100%;
@@ -110,26 +110,39 @@ a {
           //margin: 2rem;
         }
     }
+  }
+}
 
-    footer {
-      width: 100%;
-      max-width: 65rem;
-      grid-template-columns: 1fr;
-      padding: 0 2rem;
-      margin: 0 auto;
-    }
+footer {
+  width: 100%;
+  padding: 0 2rem;
+  background: $deeppurple;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+}
+
+.footer-nav {
+  padding: 3rem;
+  list-style: none;
+  font-size: .8rem;
+  color: white;
+  a {
+    color: white;
   }
 }
 
 .hero-content {
   padding: 3rem;
   margin-bottom: 3rem;
+  max-width: 65rem;
+  margin: auto;
 }
 
 .page-header {
   color: $header-heading-color;
-  text-align: center;
-  background: $al-gradient-5;
+  background: $deeppurple;
   box-shadow: $box-shadow-2;
   font-family: $font-header;
 
@@ -144,38 +157,21 @@ a {
   margin: 0;
   margin-bottom: 0.1rem;
   text-shadow: $text-shadow;
-
-  @include large {
-    font-size: 3.25rem;
-  }
-
-  @include medium {
-    font-size: 2.25rem;
-  }
-
-  @include small {
-    font-size: 1.75rem;
-  }
+  font-size: 3.25rem;
 }
 
 .project-tagline {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 2rem;
   font-weight: 300;
   opacity: 0.7;
   font-family: $font-body;
-
+  font-size: 1.25rem;
   a {
     color: white;
   }
-
-  @include large {
-    font-size: 1.25rem;
-  }
-
   @include medium {
-    font-size: 1.15rem;
   }
-
   @include small {
     font-size: 1rem;
   }
@@ -184,24 +180,63 @@ a {
 .main-content {
   word-wrap: break-word;
 
+  .section-content {
+    padding: 2rem;
+    @include large {
+      max-width: 65rem;
+      margin: 0 auto;
+    }
+  }
+
+  .gray-section {
+    background-color: #EFEFEF;
+    @include small {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .section-description {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding: 3rem;
+  }
+
+  h1.section-header {
+    font-size: 3.25rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 0rem;
+    margin-top: 3rem;
+  }
+
+  p.section-sub-header {
+    text-align: center;
+    color: black;
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .oss-projects {
+    display: flex;
+    justify-content: space-between;
+  }
+
   :first-child {
     margin-top: 0;
   }
 
   @include large {
-    max-width: 65rem;
-    padding: 2rem;
     margin: 0 auto;
     font-size: 1.1rem;
   }
 
   @include medium {
-    padding: 2rem 4rem;
     font-size: 1.1rem;
   }
 
   @include small {
-    padding: 2rem;
     font-size: 1rem;
   }
 

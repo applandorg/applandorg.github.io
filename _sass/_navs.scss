@@ -3,7 +3,6 @@ nav {
   justify-content: space-between;
   flex-direction: row;
   padding: 2rem 2rem 0 2rem;
-  max-width: 65rem;
   margin: 0 auto;
   align-items: center;
 
@@ -26,6 +25,10 @@ nav {
   }
 }
 
+h1 {
+  font-family: 'Monda', sans-serif;
+}
+
 .logo {
   text-indent: -99999px;
   width: 4rem;
@@ -33,57 +36,62 @@ nav {
   background-repeat: no-repeat;
 }
 
-.appmap-logo {
-  text-indent: -99999px;
-  width: 4rem;
-  background-image: url(/assets/img/temp-logo.svg);
-  background-repeat: no-repeat;
+.discord-button {
+  width: 100%;
+  height: 100%;
+  height: 6.5rem;
+  background: $al-gradient-5;
+  border-width: 0rem;
+  font-family: 'Monda';
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  img {
+    margin-right: 1.5rem;
+  }
+  @include small {
+    img {
+      margin-right: .5rem;
+    }
+  }
 }
 
-#corp-header {
-  background-color: $gray1;
-  max-width: 100%;
-  nav {
-    padding: 1rem;
-    width: 100%;
-    margin-right: 0;
-    justify-content: flex-end;
+.page-header {
+  @include small {
+    #home-link {
+      display: none;
+    }
   }
-  img.corp-logo {
-    width: 7rem;
-  }
+}
+
+#inline-home-link {
+  display: none;
 }
 
 #main-nav {
   padding: 2rem;
+  margin-right: 0rem;
+  font-size: .8rem;
+  width: 100%;
   ul {
+    margin-left: auto;
+    li a svg {
+      width: 1rem;
+      height: 1rem;
+    }
     @include small {
-      flex-direction: column;
-      li {
-        padding: .5rem 0;
-        transition: $transition;
+      #inline-home-link {
+        display: inline-flex;
       }
     }
   }
 }
 
-.header-logo-group {
-  a {
-    display: flex;
-    flex-direction: row;
-  }
-  h3 {
-    margin: 2rem 0 2rem 1rem;
-  }
-}
-
 @include small {
-  #corp-header {
-    nav {
-      margin-right: auto;
-      margin-left: auto;
-    }
-  }
   .blog-post-list .blog-post {
      flex-direction: column;
      img {
@@ -93,9 +101,6 @@ nav {
    }
    nav {
      flex-direction: column-reverse;
-   }
-   h1.project-name {
-     display: none;
    }
    .header-logo-group {
      h3 {
