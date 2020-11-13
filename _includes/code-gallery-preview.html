@@ -1,10 +1,8 @@
 <div class="gray-section">
   <div class="section-content">
-
     <h1 class="section-description">See how people in the open source community
     are using AppMaps to record, analyze,
     and optimize end-to-end code and data flows.</h1>
-
     <ul class="gallery-project-list">
       {% assign featured_posts = site.posts | where: "featured", true %}
       {% for post in featured_posts limit:4 %}
@@ -21,7 +19,6 @@
       {% endif %}
       {% endfor %}
     </ul>
-
     <div class='large-inline-cta'>
       <p class="btn btn-primary">
         <a class="two-line-label" href="code-gallery">
