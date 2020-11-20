@@ -91,6 +91,21 @@ h1 {
   }
 }
 
+#corp-nav {
+  background-color: black;
+  padding: 1rem;
+  ul {
+    margin-left: auto;
+    @include small {
+      margin-right: auto;
+    }
+  }
+  img {
+    width: 8rem;
+  }
+
+}
+
 @include small {
   .blog-post-list .blog-post {
      flex-direction: column;
