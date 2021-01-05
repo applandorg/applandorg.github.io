@@ -5,7 +5,7 @@ author: Petr Dvorak
 permalink: /code-gallery/:title/
 category: gallery
 featured: true
-thumb: /code-gallery/assets/img/appmap-force-d3-thumb.jpg
+thumb: /code-gallery/assets/img/appmap-force-d3-thumb.png
 image: /code-gallery/assets/img/appmap-force-d3.png
 excerpt_separator: <!--more-->
 ---
