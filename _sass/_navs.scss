@@ -107,13 +107,6 @@ h1 {
 }
 
 @include small {
-  .blog-post-list .blog-post {
-     flex-direction: column;
-     img {
-       align-self: center;
-       margin-bottom: 1rem;
-     }
-   }
    nav {
      flex-direction: column-reverse;
    }
