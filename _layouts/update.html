@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<div class="section-content updates">
+  <div class="updates__version-selector updates--sm">
+    <label for="update-select">Updates</label>
+
+    <select id="update-select">
+        {% for update in site.updates reversed %}
+          <option
+            {% if page.url == update.url %} selected {% endif %}
+            value="{{ update.url }}">
+            {{update.version}}
+          </option>
+        {% endfor %}
+    </select>
+  </div>
+
+  <div class="updates__version-selector updates--lg">
+    <h4 class="updates__header">AppMap for VS Code</h4>
+    <ul>
+      {% for update in site.updates reversed %}
+        <li>
+          <a
+            class="updates__version-link {% if page.url == update.url %} updates__version-link--active {% endif %}"
+            href="{{ update.url }}">
+            {{ update.version }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="updates__content">
+    <h1>{{ page.product }}</h1>
+    <h4 class="updates__subheader">{{ page.version }} — released {{ page.release_date }}</h4>
+    {{ content }}
+  </div>
+</div>
+
+<script type="application/javascript">
+  function onChangeUpdate(e) {
+    console.log(e);
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var updateSelect = document.querySelector('#update-select');
+    updateSelect.addEventListener('change', function() {
+      window.location = updateSelect.value;
+    });
+  });
+  
+</script>
