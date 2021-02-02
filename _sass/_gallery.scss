@@ -57,6 +57,18 @@
   }
   @include small {
     grid-template-columns: 1fr;
+    .gallery-project {
+      flex-direction: column;
+      img {
+        margin-right: 0;
+      }
+      .post-content {
+        margin-top: .5rem;
+      }
+      h2 {
+        line-height: 2rem;
+      }
+    }
   }
 }
 
