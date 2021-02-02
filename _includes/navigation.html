@@ -7,6 +7,9 @@
   {% endif %}
   <ul>
     <li><a id="inline-home-link" href="/">AppLand</a></li>
+    {% if include.most_recent_update_url %}
+      <li><a href="{{ include.most_recent_update_url }}">Updates</a></li>
+    {% endif %}
     <li><a href="/code-gallery">Code gallery</a></li>
     <li><a href="/about">About</a></li>
     <li>

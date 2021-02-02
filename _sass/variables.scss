@@ -69,7 +69,7 @@ $row-height: 3rem;
 // Fonts
 $font-mono: 'IBM Plex Mono', monospace;
 $font-body: 'IBM Plex Sans', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
 $font-header: 'Monda', sans-serif;
 
 @mixin large {

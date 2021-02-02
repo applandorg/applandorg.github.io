@@ -11,7 +11,7 @@
       <!-- header -->
       <header class="page-header">
         {% include corporate_header.html %}
-        {% include navigation.html %}
+        {% include navigation.html most_recent_update_url=site.updates.last.url %}
         {% if page.category=="home" %}
           {% include hero-content.html %}
         {% endif %}
