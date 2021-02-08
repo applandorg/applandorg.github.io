@@ -34,6 +34,30 @@
           gtag('js', new Date());
 
           gtag('config', 'UA-180943551-1');
+
+          document.addEventListener('DOMContentLoaded', function() {
+            var eventElements = document.querySelectorAll('[data-event-action]');
+            for (var i = 0; i < eventElements.length; ++i) {
+              var element = eventElements[i];
+              var label = element.getAttribute('data-event-label');
+              var category = element.getAttribute('data-event-category');
+              var action = element.getAttribute('data-event-action');
+              var on = element.getAttribute('data-event-on') || 'click';
+              var payload = {};
+
+              if (label) {
+                payload['event_label'] = label;
+              }
+
+              if (category) {
+                payload['event_category'] = category;
+              }
+
+              element.addEventListener(on, function() {
+                  gtag('event', action, payload);
+              });
+            }
+          });
         </script>
       {% endif %}
     </div>
