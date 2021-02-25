@@ -37,7 +37,9 @@ persists in a database unencrypted. Try it out with your own data!
 
 ## Components used
 This example uses appmap data captured from a live application via an AppMap
-recording client. Clients are available both for [Ruby](https://github.com/applandinc/appmap-ruby)
+recording client. Clients are for
+[Python](https://github.com/applandinc/appmap-python),
+[Ruby](https://github.com/applandinc/appmap-ruby),
 and [Java](https://github.com/applandinc/appmap-java).
 
 ## Customizations
