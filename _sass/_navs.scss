@@ -1,3 +1,31 @@
+.dropdown-toggle {
+  text-align: left;
+  color: $white;
+  cursor: pointer;
+}
+
+
+.dropdown-item {
+  color: #fff;
+  transition: $transition;
+}
+
+.dropdown-item:hover {
+  background: $hotpink;
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: #1a1a1a;
+  left: unset;
+  a{
+    color: white;
+  }
+  &.show {
+    background-color: lighten($gray1,02%);
+  }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
