@@ -26,6 +26,117 @@
   }
 }
 
+.dropdown-menu {
+  padding: 10px;
+ 
+}
+
+.resources-list {
+  display: inline-flex;
+  align: flex;
+}
+
+.sub-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  h5 {
+    padding: .5rem 1.5rem;
+    color: $gray4;
+    margin: 0;
+  }
+  li {
+    color: $white;
+    border-bottom: 1px solid $gray2;
+    padding: .35rem 1.5rem;
+    transition: $transition;
+    a {
+      color: $white;
+      transition: $transition;
+      display: inline-block;
+      width: 100%;
+    }
+    em {
+      font-weight: 500;
+      color: $gray4;
+    }
+    .social-icon {
+      width: 1.25rem;
+      margin: 0 .5rem;
+      height: 1.25rem;
+    }
+    &:first-of-type {
+      border-top: 1px solid $gray2;
+    }
+    &:hover {
+      background-color: $hotpink;
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+.dropdown-menu {
+  padding: 10px;
+ 
+}
+
+.resources-list {
+  display: inline-flex;
+  align: flex;
+}
+
+.sub-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  h5 {
+    padding: .5rem 1.5rem;
+    color: $gray4;
+    margin: 0;
+  }
+  li {
+    color: $white;
+    border-bottom: 1px solid $gray2;
+    padding: .35rem 1.5rem;
+    transition: $transition;
+    a {
+      color: $white;
+      transition: $transition;
+      display: inline-block;
+      width: 100%;
+    }
+    em {
+      font-weight: 500;
+      color: $gray4;
+    }
+    .social-icon {
+      width: 1.25rem;
+      margin: 0 .5rem;
+      height: 1.25rem;
+    }
+    &:first-of-type {
+      border-top: 1px solid $gray2;
+    }
+    &:hover {
+      background-color: $hotpink;
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -44,8 +155,6 @@ nav {
   ul {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    flex-direction: row;
     margin: 0;
     li {
       padding: 0 1rem;
@@ -123,24 +232,6 @@ h1 {
   display: none;
 }
 
-#main-nav {
-  padding: 2rem;
-  margin-right: 0rem;
-  font-size: .8rem;
-  width: 100%;
-  ul {
-    margin-left: auto;
-    li a svg {
-      width: 1rem;
-      height: 1rem;
-    }
-    @include small {
-      #inline-home-link {
-        display: inline-flex;
-      }
-    }
-  }
-}
 
 #corp-nav {
   background-color: black;
@@ -181,6 +272,10 @@ h1 {
   font-size: .9rem;
   .btn-primary, .btn-vscode {
     margin-top: 0;
+  }
+  svg {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
   }
 }
 
