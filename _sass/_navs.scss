@@ -1,3 +1,24 @@
+#community-brand {
+  svg {
+    width: 2rem;
+    margin-right: .5rem;
+  }
+  display: flex;
+  align-items: center;
+  padding-bottom: 0px;
+  font-size: 1rem;
+}
+
+.community-icon-stroke {
+  stroke: white;
+}
+
+.navbar-brand:hover  {
+  .community-icon-stroke {
+    stroke: $hotpink;
+  }
+}
+
 .dropdown-toggle {
   text-align: left;
   color: $white;
