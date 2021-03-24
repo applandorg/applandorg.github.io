@@ -15,7 +15,8 @@
 
 .navbar-brand:hover  {
   .community-icon-stroke {
-    stroke: $hotpink;
+    stroke: $white;
+    opacity: .85;
   }
 }
 
@@ -170,7 +171,9 @@ nav {
     color: $white;
     transition: $transition;
     &:hover {
-      color: $hotpink;
+      color: $white;
+      opacity: .65;
+      text-decoration: none;
     }
   }
   ul {
