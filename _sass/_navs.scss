@@ -194,8 +194,10 @@ h1 {
   background-repeat: no-repeat;
 }
 
-.nav-item .nav-link.btn {
+.nav-item .btn {
+  border-radius: .25rem;
   padding: .375rem .75rem;
+  line-height: 1.5;
 }
 
 
