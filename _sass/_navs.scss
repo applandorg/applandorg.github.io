@@ -1,3 +1,165 @@
+#community-brand {
+  svg {
+    width: 2rem;
+    margin-right: .5rem;
+  }
+  display: flex;
+  align-items: center;
+  padding-bottom: 0px;
+  font-size: 1rem;
+}
+
+.community-icon-stroke {
+  stroke: white;
+}
+
+.navbar-brand:hover  {
+  .community-icon-stroke {
+    stroke: $white;
+    opacity: .85;
+  }
+}
+
+
+.dropdown-toggle {
+  text-align: left;
+  color: $white;
+  cursor: pointer;
+}
+
+
+.dropdown-item {
+  color: #fff;
+  transition: $transition;
+}
+
+.dropdown-item:hover {
+  background: $hotpink;
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: #1a1a1a;
+  left: unset;
+  a{
+    color: white;
+  }
+  &.show {
+    background-color: lighten($gray1,02%);
+  }
+}
+
+.dropdown-menu {
+  padding: 10px;
+ 
+}
+
+.resources-list {
+  display: inline-flex;
+  align: flex;
+}
+
+.sub-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  h5 {
+    padding: .5rem 1.5rem;
+    color: $gray4;
+    margin: 0;
+  }
+  li {
+    color: $white;
+    border-bottom: 1px solid $gray2;
+    padding: .35rem 1.5rem;
+    transition: $transition;
+    a {
+      color: $white;
+      transition: $transition;
+      display: inline-block;
+      width: 100%;
+    }
+    em {
+      font-weight: 500;
+      color: $gray4;
+    }
+    .social-icon {
+      width: 1.25rem;
+      margin: 0 .5rem;
+      height: 1.25rem;
+    }
+    &:first-of-type {
+      border-top: 1px solid $gray2;
+    }
+    &:hover {
+      background-color: $hotpink;
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+.dropdown-menu {
+  padding: 10px;
+ 
+}
+
+.resources-list {
+  display: inline-flex;
+  align: flex;
+}
+
+.sub-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  h5 {
+    padding: .5rem 1.5rem;
+    color: $gray4;
+    margin: 0;
+  }
+  li {
+    color: $white;
+    border-bottom: 1px solid $gray2;
+    padding: .35rem 1.5rem;
+    transition: $transition;
+    a {
+      color: $white;
+      transition: $transition;
+      display: inline-block;
+      width: 100%;
+    }
+    em {
+      font-weight: 500;
+      color: $gray4;
+    }
+    .social-icon {
+      width: 1.25rem;
+      margin: 0 .5rem;
+      height: 1.25rem;
+    }
+    &:first-of-type {
+      border-top: 1px solid $gray2;
+    }
+    &:hover {
+      background-color: $hotpink;
+      a {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -10,14 +172,14 @@ nav {
     color: $white;
     transition: $transition;
     &:hover {
-      color: $hotpink;
+      color: $white;
+      opacity: .65;
+      text-decoration: none;
     }
   }
   ul {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    flex-direction: row;
     margin: 0;
     li {
       padding: 0 1rem;
@@ -34,6 +196,30 @@ h1 {
   width: 4rem;
   background-image: url(/assets/img/appland-a-sharp.svg);
   background-repeat: no-repeat;
+}
+
+.nav-item .btn {
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+  line-height: 1.5;
+}
+
+
+.btn.btn-vscode {
+  background-color: $gray6;
+  color: $gray2;
+  border: none;
+  margin-top: 4px;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $gray5;
+    background-color: $gray4;
+  }
+  img {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: .25rem;
+  }
 }
 
 .discord-button, .vscode-button {
@@ -73,24 +259,6 @@ h1 {
   display: none;
 }
 
-#main-nav {
-  padding: 2rem;
-  margin-right: 0rem;
-  font-size: .8rem;
-  width: 100%;
-  ul {
-    margin-left: auto;
-    li a svg {
-      width: 1rem;
-      height: 1rem;
-    }
-    @include small {
-      #inline-home-link {
-        display: inline-flex;
-      }
-    }
-  }
-}
 
 #corp-nav {
   background-color: black;
@@ -120,4 +288,419 @@ h1 {
    .hero-content {
      padding-top: 0px;
    }
+}
+
+#navbarSupportedContent {
+  background-color: $gray1;
+}
+
+.navbar-nav .nav-item {
+  padding-left: 1rem;
+  font-size: .9rem;
+  .btn-primary, .btn-vscode {
+    margin-top: 0;
+  }
+  svg {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+  }
+}
+
+.nav-item {
+  .login {
+    color: $hotpink;
+    text-decoration: underline;
+  }
+  .btn {
+    font-size: .9rem;
+  }
+}
+
+.container.home {
+  .navbar-dark {
+    background: none;
+  }
+}
+
+#corporate-header {
+  font-family: IBM Plex Sans;
+
+  .btn {
+    border: none;
+  }
+  .btn-primary {
+    color: white;
+  }
+}
+.navbar {
+  line-height: 1.8rem;
+  .material-icons {
+    color: #808b98;
+    font-size: 11px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  li {
+    padding-right: 0;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: $white;
+  &.product {
+    text-shadow: none;
+    display: flex;
+    max-height: 44px;
+    img {
+      margin-right: .5rem;
+    }
+  }
+}
+
+.social-icon {
+  width: .9rem;
+  height: .9rem;
+  opacity: .85;
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.navbar-footer {
+  background-color: $gray1;
+  padding-bottom: 1rem;
+  justify-content: center;
+  .logo-small {
+    width: 20px;
+    height: 20px;
+  }
+  .nav-link {
+    color: $white;
+    &:hover {
+      color: $white;
+      opacity: .65;
+    }
+  }
+  .nav-item {
+    padding-left: 1.5rem;
+  }
+  ul {
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+ 
+  li:first-child {
+    padding-left: 0px;
+  }
+
+}
+
+//Jobs
+.job-posting {
+  h1 {
+    color: $hotpink;
+    font-weight: 300;
+    font-size: 3rem;
+  }
+  h2 {
+    font-weight: 400;
+    color: $gray4;
+    margin: 2rem 0 .5rem 0;
+  }
+}
+
+.centered {
+  text-align: center;
+}
+
+.simple-head {
+  margin: 30px 0;
+  font-size: 4em;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+.observability-features {
+  .platforms {
+    padding: 2rem;
+    align-items: center;
+  }
+  .platform-box p {
+    padding: 2rem;
+  }
+}
+
+.simple-section {
+  width: 100%;
+  text-align: center;
+}
+
+a.white-link {
+  color: white;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 992px) {
+  .resources-list {
+    display: contents;
+  }
+
+
+.observability-features {
+  .platforms .platform-box:nth-child(2) {
+    border-left: none;
+    border-right: none
+  }
+}
+
+
+  .navbar-footer {
+    justify-content: flex-start;
+    ul {
+      flex-direction: column;
+      padding-bottom: 1.5rem;
+      align-items: flex-start;
+      .logo-small {
+        align-self: flex-start;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-post-list .blog-post {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  .post-image.post-thumb {
+    margin-right: 0px;
+  }
+}
+
+
+// Icons
+.product-icon {
+  width: 1.25rem;
+  margin-right: .25rem;
+}
+
+.nav-link {
+  &.product {
+    text-shadow: none; 
+  }
+}
+
+
+
+.home-nav {
+  position: fixed;
+  right: 2rem;
+  top: 0;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  transition: $transition;
+  li {
+    margin-left: 1rem;
+  }
+  a {
+    color: $hotpink;
+    &:hover {
+      color: $royal;
+      text-decoration: none;
+    }
+  }
+}
+button.navbar-toggler {
+  border: none;
+}
+
+.navbar-brand {
+  min-width: 150px;
+  margin-left: 1rem;
+}
+a.navbar-brand {
+  padding-top: 0px;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-dark {
+  background-color: $gray1;
+  border-bottom: $hotpink solid 1px;
+}
+
+#navbarSupportedContent {
+  background-color: $gray1;
+}
+
+.navbar-nav .nav-item {
+  padding-left: 1rem;
+  font-size: .9rem;
+  .btn-primary, .btn-vscode {
+    margin-top: 0;
+  }
+}
+
+.nav-item {
+  .login {
+    color: $hotpink;
+    text-decoration: underline;
+  }
+  .btn {
+    font-size: .9rem;
+  }
+}
+
+.container.home {
+  .navbar-dark {
+    background: none;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: $white;
+  &.product {
+    text-shadow: none;
+    display: flex;
+    max-height: 44px;
+    img {
+      margin-right: .5rem;
+    }
+  }
+}
+
+.social-icon {
+  width: .9rem;
+  height: .9rem;
+  opacity: .85;
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.navbar-footer {
+  background-color: $gray1;
+  padding-bottom: 1rem;
+  justify-content: center;
+  .logo-small {
+    width: 20px;
+    height: 20px;
+  }
+  .nav-link {
+    color: $white;
+    &:hover {
+      color: $white;
+      opacity: .65;
+    }
+  }
+  .nav-item {
+    padding-left: 1.5rem;
+  }
+  ul {
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  li:first-child {
+    padding-left: 0px;
+  }
+
+}
+
+
+
+#logo {
+  background: url("/media/appland-logo-gradient.svg") no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 3em;
+}
+
+#tagline {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 350px;
+  padding: 15px;
+  margin: auto;
+  &.contact {
+    max-width: 900px;
+    .feature-container {
+      min-height: unset;
+    }
+  }
+}
+
+.control {
+  padding: .375rem .75rem;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+
+.input-dark {
+  background-color: rgba(0,0,0,0.1);
+  border: 1px solid #c51d9f;
+  color: #757575;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0;
+}
+
+.input-dark:focus {
+  outline-offset: 0;
+  border-color: #c51d9f;
+  box-shadow: none;
+  outline: 0 none;
+}
+
+.value-changed {
+  color: #fff !important;
+}
+
+.dropdown-toggle {
+  text-align: left;
+  color: $white;
+  cursor: pointer;
+}
+
+.dropdown-item {
+  color: #fff;
+  transition: $transition;
+}
+
+.dropdown-item:hover {
+  background: $hotpink;
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: #1a1a1a;
+  left: unset;
+  a{
+    color: white;
+  }
+  &.show {
+    background-color: lighten($gray1,02%);
+  }
 }
